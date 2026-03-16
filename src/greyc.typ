@@ -952,7 +952,7 @@
             return
           }
           let p = here().page()
-          let target = _footcite-label-prefix + str(it.key)
+          let target = footcite._footcite-label-prefix + str(it.key)
           if not footcite.footcite-once.get() {
             target += "-" + str(page)
           }

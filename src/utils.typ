@@ -303,10 +303,7 @@
 /// Example: `utils.alert[important]`
 ///
 /// -> content
-// #let alert(it) = [
-//   #metadata(it) <alert>
-// ]
-#let alert(it) = [#metadata(it)<alert>]
+#let alert(it) = [#metadata(it)<touying-greyc-alert>]
 
 
 /// i18n Outline Title

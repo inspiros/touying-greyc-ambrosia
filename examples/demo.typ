@@ -12,7 +12,7 @@
 
 #import "../src/lib.typ": *
 #show: greyc-theme.with(
-  // legacy | stargazer | dewdrop | cambridge | darmstadt
+  // legacy | cambridge | darmstadt | dewdrop | stargazer
   flavor: "cambridge",
   aspect-ratio: "16-9",
   config-info(

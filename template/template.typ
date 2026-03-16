@@ -1,8 +1,8 @@
-// #import "@preview/touying:0.6.2": *
-#import "../src/lib.typ": *
+#import "@preview/touying:0.6.2": *
+#import "@preview/touying-greyc-ambrosia:0.1.0": *
 
 #show: greyc-theme.with(
-  // legacy | stargazer | dewdrop | cambridge | darmstadt
+  // legacy | cambridge | darmstadt | dewdrop | stargazer
   flavor: "legacy",
   aspect-ratio: "16-9",
   config-info(

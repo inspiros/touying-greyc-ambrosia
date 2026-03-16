@@ -457,11 +457,12 @@
   body
 }
 
+
 #let apply-alert-style(color: none, body) = context {
   if color == none {
     color = text.fill
   }
-  show <alert>: it => {
+  show <touying-greyc-alert>: it => {
     set text(fill: color)
     it.value
   }
