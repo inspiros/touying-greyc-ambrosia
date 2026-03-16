@@ -10,7 +10,7 @@ You are free to use or modify it for your own academic presentations, regardless
 
 ### Flavors
 
-`greyc-theme` offers five different flavors, inspired by existing touying and beamer themes.
+The `greyc-theme` offers five different flavors, inspired by existing touying and beamer themes.
 
 | flavor |  1  |  2  |  3  |
 |:------:|:---:|:---:|:---:|
