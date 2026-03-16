@@ -27,7 +27,7 @@ The `greyc-theme` offers five different flavors, inspired by existing touying an
 
 To select a flavor, you pass its name to the show rule of the theme.
 
-```typ
+```typst
 #import "@preview/touying-greyc-ambrosia:0.1.0": *
 
 #show: greyc-theme.with(
@@ -42,17 +42,17 @@ To select a flavor, you pass its name to the show rule of the theme.
 - Instead of using the prose citation `@key`, we can use the `#footcite(<key>)` function, which further includes a full citation to the footnote of the same slide.
 - At the end of the presentation, you must add your bibliography either by:
   - A separate bibliography slide.
-  ```typ
+  ```typst
   #bibliography-slide("bibliography.bib", style: "ieee")
   ```
   - A hidden bibliography.
-  ```typ
+  ```typst
   #hidden-bibliography("bibliography.bib", style: "ieee")
   ```
 
 > [!TIP]
 > Footnote citation, by default, is inserted only in the first slide an article was cited. To make it appear on all slides they are mentioned, modify the `footcite-once` parameter.
-> ```typ
+> ```typst
 > #show: greyc-theme.with(
 >   footcite-once: false
 > )
@@ -63,7 +63,7 @@ To select a flavor, you pass its name to the show rule of the theme.
 This package is available in the Typst Universe.
 To use it, simply add the following code to your document.
 
-```typ
+```typst
 #import "@preview/touying-greyc-ambrosia:0.1.0": *
 
 #show: greyc-theme.with(
@@ -90,7 +90,7 @@ To use it, simply add the following code to your document.
 
 > [!NOTE]
 > `touying-greyc-ambrosia` should always be imported after `touying` (which is not necessary and can be removed) in order for the functions and components it overrides to work correctly (e.g. `#alert`, `#show appendix`, ...).
-> ```typ
+> ```typst
 > #import "@preview/touying:0.6.2": *
 > #import "@preview/touying-greyc-ambrosia:0.1.0": *
 > ```
@@ -104,7 +104,7 @@ git clone https://github.com/inspiros/touying-greyc-ambrosia
 Then, store the package files in the right location following the instructions [here](https://github.com/typst/packages?tab=readme-ov-file#local-packages).
 After that, you can import the package with:
 
-```typ
+```typst
 #import "@local/touying-greyc-ambrosia:0.1.0": *
 ```
 
