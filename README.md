@@ -49,6 +49,14 @@ To select a flavor, you pass its name to the show rule of the theme.
   #hidden-bibliography("bibliography.bib", style: "ieee")
   ```
 
+> [!TIP]
+> Footnote citation, by default, is inserted only in the first slide an article was cited. To make it appear on all slides they are mentioned, modify the `footcite-once` parameter.
+> ```typ
+> #show: greyc-theme.with(
+>   ..
+>   footcite-once: false)
+> ```
+
 ## Usage
 
 This package is available in the Typst universe.

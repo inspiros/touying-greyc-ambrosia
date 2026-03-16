@@ -53,7 +53,7 @@
 /// Create an outline that allows you to filter entries and style them based on context.
 /// Modified from https://github.com/zeroeightysix/tt-lectures
 /// 
-/// `filter` is a boolean function that accepts a single argument `hd` which is a dict of:
+/// - filter (function): A boolean function that accepts a single argument `hd` which is a dict of:
 ///   - `here-path`: array = the unique 'path' for the most recently defined heading at the current location in the document.
 ///   - `here-level`: integer = `here-path.len()`, the depth of the aforementioned heading.
 ///   - `level`: integer = the depth of the being filtered heading
@@ -66,8 +66,10 @@
 ///     - `unrelated` = `true` if none of the other relations are `true`.
 ///   - loc: location = `heading.location()`
 ///   - heading: element = the actual heading element `hd` was created from
-/// 
-/// `transform` is a function taking two arguments `hd` and `it`, used to define a custom show-rule for `outline.entry`:
+///
+/// - selector-filter (function): Filter applied to the heading query selector. Default to identity.
+///
+/// - transform (function): A function taking two arguments `hd` and `it`, used to define a custom show-rule for `outline.entry`:
 ///   - `hd` is a heading dict with the same structure as in `filter`
 ///   - `it` is the `outline.entry` element being shown
 #let custom-outline(
@@ -190,6 +192,8 @@
 /// - short-heading (boolean): Indicates whether the headings should be shortened. Default is `true`.
 ///
 /// - inline (boolean): Indicates whether the bullets are displayed right after the text, instead of breaking the line. Default is `false`.
+///
+/// - selector-filter (function): Filter applied to the heading query selector. Default to identity.
 ///
 /// -> content
 #let mini-slides(
@@ -346,6 +350,8 @@
 /// - background (color): The background color of the navigation. Default is `black`.
 ///
 /// - logo (none): The logo of the navigation. Default is `none`.
+///
+/// - selector-filter (function): Filter applied to the heading query selector. Default to identity.
 ///
 /// -> content
 #let simple-navigation(
@@ -585,11 +591,19 @@
 })
 
 
-/// Theorem block for the presentation.
+/// Content block for the presentation.
 ///
-/// - title (string): The title of the theorem. Default is `none`.
+/// - title (string): The title of the block. Default is `none`.
 ///
-/// - it (content): The content of the theorem.
+/// - fill (color): The primary color of the block. Default is `auto`.
+///
+/// - background (color): The background color of the block. Default is `auto`.
+///
+/// - shadowed (boolean): Whether to show a shadow under the block. Default is `true`.
+///
+/// - it (content): The content of the block.
+///
+/// -> content
 #let tblock(title: none, fill: auto, background: auto, shadowed: true, it) = touying-fn-wrapper(_tblock.with(
   title: title,
   fill: fill,
@@ -600,11 +614,19 @@
 ))
 
 
-/// Theorem block for the presentation.
+/// Framed content block for the presentation.
 ///
-/// - title (string): The title of the theorem. Default is `none`.
+/// - title (string): The title of the block. Default is `none`.
 ///
-/// - it (content): The content of the theorem.
+/// - fill (color): The primary color of the block. Default is `auto`.
+///
+/// - background (color): The background color of the block. Default is `auto`.
+///
+/// - shadowed (boolean): Whether to show a shadow under the block. Default is `true`.
+///
+/// - it (content): The content of the block.
+///
+/// -> content
 #let framed-tblock(title: none, fill: auto, background: auto, shadowed: true, it) = touying-fn-wrapper(_tblock.with(
   title: title,
   fill: fill,

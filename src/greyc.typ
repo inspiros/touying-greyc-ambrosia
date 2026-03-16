@@ -411,7 +411,7 @@
 /// Example:
 ///
 /// ```typst
-/// #show: novagazer-theme.with(
+/// #show: ambrosia-theme.with(
 ///   config-info(
 ///     title: [Title],
 ///     logo: emoji.city,
@@ -780,12 +780,12 @@
 })
 
 
-/// Touying novagazer theme.
+/// Touying ambrosia theme.
 ///
 /// Example:
 ///
 /// ```typst
-/// #show: novagazer-theme.with(aspect-ratio: "16-9", config-colors(primary: blue))`
+/// #show: ambrosia-theme.with(aspect-ratio: "16-9", config-colors(primary: blue))`
 /// ```
 ///
 /// Consider using:
@@ -833,7 +833,7 @@
 /// - footer-c (content, function): is the second right part of the footer. The default is `self => if self.info.short-title == auto { self.info.title } else { self.info.short-title }`.
 ///
 /// - footer-d (content, function): is the right part of the footer. The default is `context utils.slide-counter.display() + " / " + utils.last-slide-number`.
-#let novagazer-theme(
+#let ambrosia-theme(
   flavor: "legacy",
   aspect-ratio: "16-9",
   align: top,
@@ -1208,7 +1208,7 @@
 
 /// Touying GREYC theme.
 ///
-/// See `novagazer-theme` for more details and examples.
+/// See `ambrosia-theme` for more details and examples.
 #let greyc-theme(
   flavor: "legacy",
   aspect-ratio: "16-9",
@@ -1276,7 +1276,7 @@
     })
   }
 
-  show: novagazer-theme.with(
+  show: ambrosia-theme.with(
     flavor: flavor,
     aspect-ratio: aspect-ratio,
     header-logo: default-header-logo,

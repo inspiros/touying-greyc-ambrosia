@@ -10,6 +10,9 @@
 
 
 /// Cite and show fullcite as a footnote.
+/// See `std.cite` and `std.footnote` for clarifications of parameters.
+///
+/// -> content
 #let footcite(
   key,
   cite-style: "apa",
@@ -41,7 +44,7 @@
           h(0.5em)
         }
         #context cite(key, form: "full", style: foot-style, supplement: supplement)
-      ] #std.label(footnote-label)]
+      ]#std.label(footnote-label)]
   } else {
     ref(std.label(footnote-label))
   }
