@@ -8,6 +8,7 @@ However, the theme comes with a lot of modifications and a range of different va
 You are free to use or modify it for your own academic presentations, regardless of your affiliation.
 
 > ✨ **Fun Fact**
+>
 > _Ambrosia_ 🍲 is a food or drink of the Greek gods, often described as having every flavor imaginable.
 
 ## Features
@@ -59,7 +60,7 @@ To select a flavor, you pass its name to the show rule of the theme.
 
 ## Usage
 
-This package is available in the Typst universe.
+This package is available in the Typst Universe.
 To use it, simply add the following code to your document.
 
 ```typ
@@ -94,10 +95,17 @@ To use it, simply add the following code to your document.
 > #import "@preview/touying-greyc-ambrosia:0.1.0": *
 > ```
 
-Or you can only download it for local use:
+Otherwise, you can download it for local use:
 
-```cmd
+```bash
 git clone https://github.com/inspiros/touying-greyc-ambrosia
+```
+
+Then, store the package files in the right location following the instructions [here](https://github.com/typst/packages?tab=readme-ov-file#local-packages).
+After that, you can import the package with:
+
+```typ
+#import "@local/touying-greyc-ambrosia:0.1.0": *
 ```
 
 ### Examples
