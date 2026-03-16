@@ -14,11 +14,11 @@ The `greyc-theme` offers five different flavors, inspired by existing touying an
 
 | flavor |  1  |  2  |  3  |
 |:------:|:---:|:---:|:---:|
-| **`legacy`** | <img src="assets/samples/sample-legacy-1.webp" width="300"> | <img src="assets/samples/sample-legacy-2.webp" width="300"> | <img src="assets/samples/sample-legacy-3.webp" width="300"> |
-| `cambridge` | <img src="assets/samples/sample-cambridge-1.webp" width="300"> | <img src="assets/samples/sample-cambridge-2.webp" width="300"> | <img src="assets/samples/sample-cambridge-3.webp" width="300"> |
-| `darmstadt` | <img src="assets/samples/sample-darmstadt-1.webp" width="300"> | <img src="assets/samples/sample-darmstadt-2.webp" width="300"> | <img src="assets/samples/sample-darmstadt-3.webp" width="300"> |
-| `dewdrop` | <img src="assets/samples/sample-dewdrop-1.webp" width="300"> | <img src="assets/samples/sample-dewdrop-2.webp" width="300"> | <img src="assets/samples/sample-dewdrop-3.webp" width="300"> |
-| `stargazer` | <img src="assets/samples/sample-stargazer-1.webp" width="300"> | <img src="assets/samples/sample-stargazer-2.webp" width="300"> | <img src="assets/samples/sample-stargazer-3.webp" width="300"> |
+| **`legacy`** | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-legacy-1.webp" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-legacy-2.webp" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-legacy-3.webp" width="300"> |
+| `cambridge` | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-cambridge-1.webp" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-cambridge-2.webp" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-cambridge-3.webp" width="300"> |
+| `darmstadt` | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-darmstadt-1.webp" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-darmstadt-2.webp" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-darmstadt-3.webp" width="300"> |
+| `dewdrop` | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-dewdrop-1.webp" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-dewdrop-2.webp" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-dewdrop-3.webp" width="300"> |
+| `stargazer` | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-stargazer-1.webp" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-stargazer-2.webp" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-stargazer-3.webp" width="300"> |
 
 To select a flavor, you pass its name to the show rule of the theme.
 
@@ -32,8 +32,6 @@ To select a flavor, you pass its name to the show rule of the theme.
 ```
 
 ### Other Functionalities
-
-_more to be added_
 
 #### Footnote Citation
 
