@@ -1,10 +1,13 @@
-touying-greyc-ambrosia
+touying-greyc-ambrosia [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ------
 
-`touying-greyc-ambrosia` is an _unofficial_ [Touying](https://github.com/touying-typ/touying) theme for creating presentation slides in [Typst](https://github.com/typst/typst).
-It is intended for members of the [GREYC](https://www.greyc.fr/en/home/) lab, and is designed (by default) to mimic the official LaTeX & PPT templates provided in https://www.greyc.fr/intranet.
+`touying-greyc-ambrosia` is a [Touying](https://github.com/touying-typ/touying) theme for creating presentation slides in [Typst](https://github.com/typst/typst).
+
+It is an _unofficial_ template intended for members of the [GREYC](https://www.greyc.fr/en/home/) lab, and is designed (by default) to mimic the official LaTeX & PPT templates provided in https://www.greyc.fr/intranet.
 However, the theme comes with a lot of modifications and a range of different variants.
 You are free to use or modify it for your own academic presentations, regardless of your affiliation.
+
+> _**Fun fact:** 🍲Ambrosia is a food or drink of the Greek gods, often described as having every flavor imaginable._
 
 ## Features
 
@@ -48,13 +51,8 @@ To select a flavor, you pass its name to the show rule of the theme.
 
 ## Usage
 
-For now, you can only download it manually:
-
-```cmd
-git clone https://github.com/inspiros/touying-greyc-ambrosia
-```
-
-In the near future, this theme will be available in the Typst universe.
+This package is available in the Typst universe.
+To use it, simply add the following code to your document.
 
 ```typ
 #import "@preview/touying-greyc-ambrosia:0.1.0": *
@@ -79,19 +77,24 @@ In the near future, this theme will be available in the Typst universe.
 == Slide
 
 #lorem(30)
+```
 
-#ending-slide()[
-  Thanks for your attention!
-]
+> [!NOTE]
+> `touying-greyc-ambrosia` should always be imported after `touying` in order for the functions and components it overrides to work correctly (`#alert`, `#show appendix`, ...).
+> ```typ
+> #import "@preview/touying:0.6.2": *
+> #import "@preview/touying-greyc-ambrosia:0.1.0": *
+> ```
+
+Or you can only download it for local use:
+
+```cmd
+git clone https://github.com/inspiros/touying-greyc-ambrosia
 ```
 
 ### Examples
 
-For more sophisticated use cases, please check [`examples/demo.typ`](examples/basic.typ) and [`examples/demo.pdf`](examples/basic.pdf).
-
-## Fun Fact
-
-*Ambrosia* is a food or drink of the Greek gods, often described as having every flavor imaginable.
+For more sophisticated use cases, please check [`examples/demo.typ`](https://github.com/inspiros/touying-greyc-ambrosia/blob/master/examples/demo.typ) and [`examples/demo.pdf`](https://github.com/inspiros/touying-greyc-ambrosia/blob/master/examples/demo.pdf).
 
 ## License
 

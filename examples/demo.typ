@@ -34,7 +34,7 @@
   This #greyc theme comes with different flavors, which can be set by changing the `flavor` parameter when initialized:
   ```typ
   #show: greyc-theme.with(
-    flavor: "legacy",  // legacy | gazer | dewdrop | cambridge | darmstadt
+    flavor: "legacy",  // legacy | cambridge | darmstadt | dewdrop | stargazer
     ..)
   ```
 ]
