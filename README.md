@@ -7,7 +7,8 @@ It is an _unofficial_ template intended for members of the [GREYC](https://www.g
 However, the theme comes with a lot of modifications and a range of different variants.
 You are free to use or modify it for your own academic presentations, regardless of your affiliation.
 
-> _**Fun fact:** 🍲Ambrosia is a food or drink of the Greek gods, often described as having every flavor imaginable._
+> ✨ **Fun Fact**
+> _Ambrosia_ 🍲 is a food or drink of the Greek gods, often described as having every flavor imaginable.
 
 ## Features
 
@@ -29,8 +30,7 @@ To select a flavor, you pass its name to the show rule of the theme.
 #import "@preview/touying-greyc-ambrosia:0.1.0": *
 
 #show: greyc-theme.with(
-  flavor: "[flavor-name]",
-  ..
+  flavor: "[flavor-name]"
 )
 ```
 
@@ -53,8 +53,8 @@ To select a flavor, you pass its name to the show rule of the theme.
 > Footnote citation, by default, is inserted only in the first slide an article was cited. To make it appear on all slides they are mentioned, modify the `footcite-once` parameter.
 > ```typ
 > #show: greyc-theme.with(
->   ..
->   footcite-once: false)
+>   footcite-once: false
+> )
 > ```
 
 ## Usage
@@ -88,7 +88,7 @@ To use it, simply add the following code to your document.
 ```
 
 > [!NOTE]
-> `touying-greyc-ambrosia` should always be imported after `touying` in order for the functions and components it overrides to work correctly (`#alert`, `#show appendix`, ...).
+> `touying-greyc-ambrosia` should always be imported after `touying` (which is not necessary and can be removed) in order for the functions and components it overrides to work correctly (e.g. `#alert`, `#show appendix`, ...).
 > ```typ
 > #import "@preview/touying:0.6.2": *
 > #import "@preview/touying-greyc-ambrosia:0.1.0": *
