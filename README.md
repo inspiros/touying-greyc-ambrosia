@@ -99,9 +99,10 @@ Otherwise, you can download it for local use:
 
 ```bash
 git clone https://github.com/inspiros/touying-greyc-ambrosia
+python scripts/install.py
 ```
 
-Then, store the package files in the right location following the instructions [here](https://github.com/typst/packages?tab=readme-ov-file#local-packages).
+This Python script stores the package files in the right location following the instructions [here](https://github.com/typst/packages?tab=readme-ov-file#local-packages).
 After that, you can import the package with:
 
 ```typst
