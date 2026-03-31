@@ -1,7 +1,7 @@
 #import "@preview/touying:0.6.2": *
 #import "../src/lib.typ": *
 
-// legacy | cambridge | darmstadt | dewdrop | stargazer
+// legacy | simple | cambridge | darmstadt | dewdrop | stargazer
 #let flavor = "legacy"
 
 #show: greyc-theme.with(

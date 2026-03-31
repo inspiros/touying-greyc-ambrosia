@@ -12,8 +12,8 @@
 
 #import "../src/lib.typ": *
 #show: greyc-theme.with(
-  // legacy | cambridge | darmstadt | dewdrop | stargazer
-  flavor: "cambridge",
+  // legacy | simple | cambridge | darmstadt | dewdrop | stargazer
+  flavor: "legacy",
   aspect-ratio: "16-9",
   config-info(
     title: [GREYC Ambrosia Theme for Typst],
@@ -34,7 +34,7 @@
   This #greyc theme comes with different flavors, which can be set by changing the `flavor` parameter when initialized:
   ```typ
   #show: greyc-theme.with(
-    flavor: "legacy",  // legacy | cambridge | darmstadt | dewdrop | stargazer
+    flavor: "legacy",  // legacy | simple | cambridge | darmstadt | dewdrop | stargazer
     ..)
   ```
 ]
@@ -128,13 +128,6 @@ Research groups and their respective sizes are listed alphabetically in @tab:tab
   assert y[x >= 0].equal(x[x >= 0])
   ```
 ]
-
-// #import "theme/assets.typ" as assets
-// #image(bytes(assets.transparentize-svg(
-//   assets.colorize-svg(assets.asset-paths.logo-greyc.en,
-//   source: colors.logo, target: red),
-//   opacity: 0.5)), width: 50%)
-
 
 == Animations
 === `pause` and `meanwhile`
