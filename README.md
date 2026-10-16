@@ -108,6 +108,8 @@ lab-information card with the laboratory website QR.
 For checkout setup, tests, artwork generation, and release preparation, see
 [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## License
+
 Source code is MIT licensed; see [LICENSE](LICENSE). GREYC/team logos under
 `assets/logos/greyc/`, partner marks under `assets/logos/institutions/`, the lab
 website QR (`assets/qr/qr-code-greyc-light.svg`), and the
