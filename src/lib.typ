@@ -1,8 +1,9 @@
-#import "greyc.typ": *
-#import "core.typ": appendix
-#import "footcite.typ": footcite
-#import "utils.typ": alert
-
+// GREYC adds branding and the legacy flavor; all general behavior is re-exported.
+#import "core.typ": *
+#import "theme/greyc.typ": greyc, greyc-theme
 #import "assets.typ"
 #import "colors.typ"
-#import "components.typ": tblock, framed-tblock, shadow
+#import "branding.typ"
+#import "palettes.typ"
+#import "ambrosia.typ" as ambrosia
+#import "palettes.typ": ambrosia-palette

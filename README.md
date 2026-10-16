@@ -1,119 +1,120 @@
-touying-greyc-ambrosia [![Typst Universe](https://img.shields.io/badge/dynamic/xml?url=https%3A%2F%2Ftypst.app%2Funiverse%2Fpackage%2Ftouying-greyc-ambrosia&query=%2Fhtml%2Fbody%2Fdiv%2Fmain%2Fdiv%5B2%5D%2Faside%2Fsection%5B2%5D%2Fdl%2Fdd%5B3%5D&logo=typst&label=Universe&color=%23239DAE)](https://typst.app/universe/package/touying-greyc-ambrosia) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-------
+# Touying GREYC Ambrosia
 
-`touying-greyc-ambrosia` is a [Touying](https://github.com/touying-typ/touying) theme for creating presentation slides in [Typst](https://github.com/typst/typst).
+[![Typst Universe](https://img.shields.io/badge/Universe-0.2.0-239DAE?logo=typst)](https://typst.app/universe/package/touying-greyc-ambrosia) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-It is an _unofficial_ template intended for members of the [GREYC](https://www.greyc.fr/en/home/) lab, and is designed (by default) to mimic the official LaTeX & PPT templates provided in https://www.greyc.fr/intranet.
-However, the theme comes with a lot of modifications and a range of different variants.
-You are free to use or modify it for your own academic presentations, regardless of your affiliation.
+<img src="assets/thumbnail.svg" alt="Touying GREYC Ambrosia: project logo, legacy cover, team branding, and modern slide layouts" width="1000">
 
-> ✨ **Fun Fact**
->
-> _Ambrosia_ 🍲 is a food or drink of the Greek gods, often described as having every flavor imaginable.
+An unofficial [Typst](https://typst.app/) presentation theme for the [GREYC laboratory](https://www.greyc.fr/en/home/), built on [Touying Ambrosia](https://github.com/inspiros/touying-ambrosia). Its default `legacy` flavor preserves the lab's earlier LaTeX/PPT appearance. It also supports the core's seven neutral layouts and configurable light/dark palettes.
 
-## Features
+This package adds lab/team/partner logos, GREYC color presets, and the legacy cover. Shared layouts, components, citation helpers, and metadata handling live in the core and are re-exported here.
 
-### Flavors
+**Requirements:** Typst 0.15+, Touying 0.8.0, and Touying Ambrosia 0.1.0. [Start from the template on Typst Universe](https://typst.app/universe/package/touying-greyc-ambrosia).
 
-The `greyc-theme` offers six different flavors, inspired by existing touying and beamer themes.
+<details>
+<summary>Explore The Legacy Cover</summary>
 
-| flavor |  1  |  2  |  3  |
-|:------:|:---:|:---:|:---:|
-| **`legacy`** | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-legacy-1.webp" alt="Sample title slide with legacy flavor" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-legacy-2.webp" alt="Sample outline slide with legacy flavor" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-legacy-3.webp" alt="Sample content slide with legacy flavor" width="300"> |
-| `simple` | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-simple-1.webp"  alt="Sample title slide with simple flavor" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-simple-2.webp" alt="Sample outline slide with simple flavor" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-simple-3.webp" alt="Sample content slide with simple flavor" width="300"> |
-| `cambridge` | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-cambridge-1.webp" alt="Sample title slide with cambridge flavor" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-cambridge-2.webp" alt="Sample outline slide with cambridge flavor" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-cambridge-3.webp" alt="Sample content slide with cambridge flavor" width="300"> |
-| `darmstadt` | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-darmstadt-1.webp" alt="Sample title slide with darmstadt flavor" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-darmstadt-2.webp" alt="Sample outline slide with darmstadt flavor" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-darmstadt-3.webp" alt="Sample content slide with darmstadt flavor" width="300"> |
-| `dewdrop` | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-dewdrop-1.webp" alt="Sample title slide with dewdrop flavor" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-dewdrop-2.webp" alt="Sample outline slide with dewdrop flavor" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-dewdrop-3.webp" alt="Sample content slide with dewdrop flavor" width="300"> |
-| `stargazer` | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-stargazer-1.webp" alt="Sample title slide with stargazer flavor" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-stargazer-2.webp" alt="Sample outline slide with stargazer flavor" width="300"> | <img src="https://raw.githubusercontent.com/inspiros/touying-greyc-ambrosia/master/assets/samples/sample-stargazer-3.webp" alt="Sample content slide with stargazer flavor" width="300"> |
+<img src="assets/gallery/legacy-cover.webp" width="1000" alt="GREYC legacy title slide with the laboratory photograph, linked authors, and institutional logos">
 
-To select a flavor, you pass its name to the show rule of the theme.
+</details>
+
+[Browse the full legacy demo](examples/demo.pdf) · [Edit its source](examples/demo.typ)
+
+## Start A Presentation
 
 ```typst
-#import "@preview/touying-greyc-ambrosia:0.1.0": *
-
+#import "@preview/touying-greyc-ambrosia:0.2.0": *
 #show: greyc-theme.with(
-  flavor: "[flavor-name]"
-)
-```
-
-### Other Functionalities
-
-#### Footnote Citation
-
-- Instead of using the prose citation `@key`, we can use the `#footcite(<key>)` function, which further includes a full citation to the footnote of the same slide.
-- At the end of the presentation, you must add your bibliography either by:
-  - A separate bibliography slide.
-  ```typst
-  #bibliography-slide("bibliography.bib", style: "ieee")
-  ```
-  - A hidden bibliography.
-  ```typst
-  #hidden-bibliography("bibliography.bib", style: "ieee")
-  ```
-
-> [!TIP]
-> Footnote citation, by default, is inserted only in the first slide an article was cited. To make it appear on all slides they are mentioned, modify the `footcite-once` parameter.
-> ```typst
-> #show: greyc-theme.with(
->   footcite-once: false
-> )
-> ```
-
-## Usage
-
-This package is available in the Typst Universe.
-To use it, simply add the following code to your document.
-
-```typst
-#import "@preview/touying-greyc-ambrosia:0.1.0": *
-
-#show: greyc-theme.with(
-  // legacy | stargazer | dewdrop | cambridge | darmstadt
   flavor: "legacy",
-  aspect-ratio: "16-9",
-  config-info(
-    title: [Title],
-    subtitle: [Subtitle],
-    author: [Author],
-    date: datetime.today(),
-    institution: [Institution],
-  ),
+  palette: "greyc-light",
+  // team: "safe",
+  config-info(title: [Research Presentation], author: [Presenter],
+    institution: [GREYC · Université de Caen Normandie · ENSICAEN · CNRS],
+    date: datetime.today()),
 )
 
 #title-slide()
+#outline-slide()
 
-= Section Title
+= Research
+== A Useful Result
+#ambrosia-block(style: "poster", kind: "success", title: [Finding])[Evidence.]
+#ending-slide(title: [Questions?])[]
 
-== Slide
-
-#lorem(30)
+#show: appendix
+== Supporting Evidence
+Additional material.
 ```
 
-> [!NOTE]
-> `touying-greyc-ambrosia` should always be imported after `touying` (which is not necessary and can be removed) in order for the functions and components it overrides to work correctly (e.g. `#alert`, `#show: appendix`, ...).
-> ```typst
-> #import "@preview/touying:0.6.2": *
-> #import "@preview/touying-greyc-ambrosia:0.1.0": *
-> ```
+The complete starter can also be initialized locally:
 
-Otherwise, you can download it for local use:
-
-```bash
-git clone https://github.com/inspiros/touying-greyc-ambrosia
-python scripts/install.py
- ```
-
-This Python script stores the package files in the right location following the instructions [here](https://github.com/typst/packages?tab=readme-ov-file#local-packages).
-After that, you can import the package with:
-
-```typst
-#import "@local/touying-greyc-ambrosia:0.1.0": *
+```sh
+typst init @preview/touying-greyc-ambrosia:0.2.0 my-slides
 ```
 
-### Examples
+`flavor` selects geometry: `legacy` (default), `simple`, `cambridge`, `darmstadt`, `dewdrop`, `stargazer`, `minimal`, or `portico`.
 
-For more sophisticated use cases, please check [`examples/demo.typ`](https://github.com/inspiros/touying-greyc-ambrosia/blob/master/examples/demo.typ) and [`examples/demo.pdf`](https://github.com/inspiros/touying-greyc-ambrosia/blob/master/examples/demo.pdf).
+<img src="assets/gallery/flavors.webp" width="1000" alt="GREYC content in Legacy, Stargazer, Cambridge with Ocean colors, and Minimal with dark GREYC colors">
 
-## License
+`palette` selects colors independently. Four lab presets keep the GREYC purple: **`greyc-light`** (default, white), **`greyc-ivory`** (warm paper), **`greyc-nocturne`** (cool dark surfaces), and **`greyc-charcoal`** (neutral dark gray). Neutral names such as `light`, `ocean`, and `midnight` use the core's colors. Use `ambrosia-palette(base: "greyc-ivory", primary: ..., name: ...)` to compose a lab variation, or any of the core's twelve presets. See [palette configuration](https://github.com/inspiros/touying-ambrosia/blob/main/docs/palettes.md).
 
-MIT licensed, see [LICENSE](LICENSE).
+<img src="assets/gallery/palettes.webp" width="1000" alt="The same GREYC slide in Light, Ivory, Nocturne, and Charcoal palettes">
+
+`team` selects `amacc`, `codag`, `diamant`, `electronique`, `image`, `mad`, or `safe`, replacing the lab logos while preserving every palette color. `team-accent: true` optionally adds the team's original color as a thin stripe on the legacy cover. Logos adapt to their surface: primary purple becomes `#FBF7F8` on dark backgrounds while team accents are preserved.
+
+<img src="assets/gallery/teams.webp" width="1000" alt="GREYC team branding: AMACC, CODAG, DIAMANT, ELECTRONIQUE, IMAGE, MAD, and SAFE">
+
+Horizontal title rows group the lab/team mark on the left and institution partners
+on the right. The legacy row stays inside its palette-colored text region; team
+color can appear in a separate narrow edge strip with `team-accent: true`. The cover follows the resolved primary color with contrasting text and logos. Featured partners remain centered. `primary-logos` can replace the lab mark with several repeated marks;
+`logos` holds opening partners. The neutral core offers the same grouping as an
+option, while GREYC enables it by default.
+
+See [the compact branding example](examples/branding.typ), [the longer legacy demo](examples/demo.typ), [the team sheet](examples/teams.typ) and [GREYC branding options](docs/branding.md). The complete starter is in [template/template.typ](template/template.typ).
+
+The [user guide](docs/README.md) links the branding reference and shared core
+documentation.
+
+## Shared Features And Examples
+
+<img src="assets/gallery/demo.webp" width="1000" alt="Legacy slides showcasing semantic containers, figures and tables, a roadmap, and an optional package credit card">
+
+The [longer demo](examples/demo.typ) keeps the legacy flavor while showcasing
+selected shared features: linked authors, tree navigation, nested reveals,
+semantic blocks, text hierarchy, code, citations, a palette showcase, a roadmap,
+image/focus slides, credits, and a working appendix. Edit its defaults in an IDE;
+the [rendered PDF](examples/demo.pdf) is available for a quick overview.
+
+The **[Touying Ambrosia repository](https://github.com/inspiros/touying-ambrosia)** is the main home for shared examples and documentation:
+
+- [Illustrated manual](https://github.com/inspiros/touying-ambrosia/blob/main/docs/manual.pdf), [public API](https://github.com/inspiros/touying-ambrosia/blob/main/docs/api.md), and [complete demo](https://github.com/inspiros/touying-ambrosia/blob/main/examples/demo.typ).
+- [Palettes and showcase](https://github.com/inspiros/touying-ambrosia/blob/main/docs/palettes.md).
+- [Blocks, citations, and slide helpers](https://github.com/inspiros/touying-ambrosia/blob/main/docs/utilities.md).
+- [Image caption placement](https://github.com/inspiros/touying-ambrosia/blob/main/docs/image-slides.md), including bands and inset corner cards.
+- [Authors, linked affiliations, and fitted footers](https://github.com/inspiros/touying-ambrosia/blob/main/docs/people.md).
+- [Institution wrapper extensions](https://github.com/inspiros/touying-ambrosia/blob/main/docs/extensions.md).
+
+Use `greyc-theme` in place of `ambrosia-theme` in those examples. All core authoring helpers are available, including scoped forms such as `ambrosia.block`, `ambrosia.palette-showcase`, `ambrosia.affiliation`, and `ambrosia.navigation-buttons`. Native `#cite` / `@key` citations share the compact author-year labels by default. Configurable header/sidebar navigation, breadcrumbs, section progress, and optional transparent PDF controls are documented in the core's [navigation guide](https://github.com/inspiros/touying-ambrosia/blob/main/docs/navigation.md).
+
+The optional `#ambrosia-credit-card()` uses GREYC Ambrosia branding, a static
+repository QR, and a link to the neutral core. `qr: false` hides the code. It
+works in ordinary slides and endings; nothing is inserted automatically. See
+the core's [credit/acknowledgement example](https://github.com/inspiros/touying-ambrosia/blob/main/examples/credits.typ).
+
+The [GREYC card example](examples/credits.typ) reuses that renderer for a separate
+lab-information card with the laboratory website QR.
+
+## Contributing
+
+For checkout setup, tests, artwork generation, and release preparation, see
+[CONTRIBUTING.md](CONTRIBUTING.md).
+
+Source code is MIT licensed; see [LICENSE](LICENSE). GREYC/team logos under
+`assets/logos/greyc/`, partner marks under `assets/logos/institutions/`, the lab
+website QR (`assets/qr/qr-code-greyc-light.svg`), and the
+legacy cover photograph (`assets/greyc-cover.webp`) retain their respective
+owners' rights and are not relicensed by this software license.
+
+Lab and institutional logos and the cover photograph come from GREYC's
+[LaTeX and PowerPoint templates](https://www.greyc.fr/intranet/#1647886250909-16337474-b9c8).
+Team logos and their usage guidelines are available from the
+[GREYC communication resources](https://giguete.users.greyc.fr/com/).

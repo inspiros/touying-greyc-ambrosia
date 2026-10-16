@@ -1,18 +1,24 @@
-#import "@preview/touying:0.6.2": *
 #import "../src/lib.typ": *
 
-// legacy | simple | cambridge | darmstadt | dewdrop | stargazer
+// Edit these defaults in your IDE. CLI inputs optionally override them.
+// Geometry: legacy | simple | cambridge | darmstadt | dewdrop | stargazer | minimal | portico
 #let flavor = "legacy"
+#let flavor = sys.inputs.at("flavor", default: flavor)
+#let palette = "greyc-light" // greyc-light | greyc-ivory | greyc-nocturne | greyc-charcoal; core palettes also work
+#let palette = sys.inputs.at("palette", default: palette)
+#let team = none // or a team ID such as "safe"
 
 #show: greyc-theme.with(
   flavor: flavor,
+  palette: palette,
+  team: sys.inputs.at("team", default: team),
   aspect-ratio: "16-9",
   config-info(
-    title: [theme: greyc-theme],
-    subtitle: [flavor: #flavor],
-    author: [Hoang-Nhat Tran#super[1]],
-    date: datetime.today(),
-    institution: [#super[1]SAFE team, GREYC laboratory, University Caen Normandy],
+    title: [GREYC Ambrosia],
+    subtitle: [Flavor: #flavor · Palette: #palette],
+    authors: ((name: [Hoang-Nhat Tran], affiliations: ("lab",)),),
+    date: datetime(year: 2026, month: 10, day: 15),
+    institutions: (lab: [GREYC Laboratory, University Caen Normandy]),
   ),
 )
 
@@ -30,10 +36,10 @@ For the sake of showing an example.
 - This is a sample list.
 - #footcite(<knuth84>) is a sample footnote citation using ```typ #footcite```.
 
-#tblock(title: [Sample Block Title])[
+#ambrosia-block(title: [Sample Block Title])[
   This text is enclosed in a block, usage:
   ```typ
-  #tblock(title: [Block title])[Block content]
+  #ambrosia-block(title: [Block Title])[Block content]
   ```
 ]
 
