@@ -30,3 +30,13 @@ SVG composition under `docs/maintainers/artwork`. The images are bundled under
 core; `--package-path` reuses an existing isolated dependency tree. The full
 preview generator refreshes this hero too. The manifest PNG remains an actual
 initialized-template page.
+
+## Continuous Integration
+
+GitHub Actions checks pushes, pull requests, and manual dispatches with Typst
+0.15.1. It checks out the core's `master` branch beside this repository, runs
+installer/package-boundary/signature tests, then the GREYC branding regression
+runner. This deliberately tests live development integration; published runtime
+imports retain the exact core version. If a core signature changes, update the
+mirrored GREYC declarations and push both repositories. CI has read-only
+permissions and performs no publication or artwork updates.

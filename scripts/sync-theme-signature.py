@@ -7,7 +7,7 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 # GREYC owns these options or resolves them dynamically at runtime.
 OWN = {"flavor", "palette"}
-DEFAULTS = {"logos": "auto", "watermark-logo": "auto", "title-logo-distribution": '"grouped"'}
+DEFAULTS = {"logos": "auto", "watermark-logo": "auto", "title-logo-distribution": '"grouped"', "outline-fill": "repeat[.]"}
 BRANDING = {"logos", "header-logo", "logo-focus", "watermark-logo"}
 
 

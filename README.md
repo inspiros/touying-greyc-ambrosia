@@ -51,11 +51,13 @@ The complete starter can also be initialized locally:
 typst init @preview/touying-greyc-ambrosia:0.2.0 my-slides
 ```
 
+GREYC outlines use dotted leaders by default. Set `outline-fill: none` on the theme, or `fill:` on an individual `outline-slide`, to customize them.
+
 `flavor` selects geometry: `legacy` (default), `simple`, `cambridge`, `darmstadt`, `dewdrop`, `stargazer`, `minimal`, or `portico`.
 
 <img src="assets/gallery/flavors.webp" width="1000" alt="GREYC content in Legacy, Stargazer, Cambridge with Ocean colors, and Minimal with dark GREYC colors">
 
-`palette` selects colors independently. Four lab presets keep the GREYC purple: **`greyc-light`** (default, white), **`greyc-ivory`** (warm paper), **`greyc-nocturne`** (cool dark surfaces), and **`greyc-charcoal`** (neutral dark gray). Neutral names such as `light`, `ocean`, and `midnight` use the core's colors. Use `ambrosia-palette(base: "greyc-ivory", primary: ..., name: ...)` to compose a lab variation, or any of the core's twelve presets. See [palette configuration](https://github.com/inspiros/touying-ambrosia/blob/main/docs/palettes.md).
+`palette` selects colors independently. Four lab presets keep the GREYC purple: **`greyc-light`** (default, white), **`greyc-ivory`** (warm paper), **`greyc-nocturne`** (cool dark surfaces), and **`greyc-charcoal`** (neutral dark gray). Neutral names such as `light`, `ocean`, and `midnight` use the core's colors. Use `ambrosia-palette(base: "greyc-ivory", primary: ..., name: ...)` to compose a lab variation, or any of the core's twelve presets. See [palette configuration](https://github.com/inspiros/touying-ambrosia/blob/master/docs/palettes.md).
 
 <img src="assets/gallery/palettes.webp" width="1000" alt="The same GREYC slide in Light, Ivory, Nocturne, and Charcoal palettes">
 
@@ -86,19 +88,19 @@ the [rendered PDF](examples/demo.pdf) is available for a quick overview.
 
 The **[Touying Ambrosia repository](https://github.com/inspiros/touying-ambrosia)** is the main home for shared examples and documentation:
 
-- [Illustrated manual](https://github.com/inspiros/touying-ambrosia/blob/main/docs/manual.pdf), [public API](https://github.com/inspiros/touying-ambrosia/blob/main/docs/api.md), and [complete demo](https://github.com/inspiros/touying-ambrosia/blob/main/examples/demo.typ).
-- [Palettes and showcase](https://github.com/inspiros/touying-ambrosia/blob/main/docs/palettes.md).
-- [Blocks, citations, and slide helpers](https://github.com/inspiros/touying-ambrosia/blob/main/docs/utilities.md).
-- [Image caption placement](https://github.com/inspiros/touying-ambrosia/blob/main/docs/image-slides.md), including bands and inset corner cards.
-- [Authors, linked affiliations, and fitted footers](https://github.com/inspiros/touying-ambrosia/blob/main/docs/people.md).
-- [Institution wrapper extensions](https://github.com/inspiros/touying-ambrosia/blob/main/docs/extensions.md).
+- [Illustrated manual](https://github.com/inspiros/touying-ambrosia/blob/master/docs/manual.pdf), [public API](https://github.com/inspiros/touying-ambrosia/blob/master/docs/api.md), and [complete demo](https://github.com/inspiros/touying-ambrosia/blob/master/examples/demo.typ).
+- [Palettes and showcase](https://github.com/inspiros/touying-ambrosia/blob/master/docs/palettes.md).
+- [Blocks, citations, and slide helpers](https://github.com/inspiros/touying-ambrosia/blob/master/docs/utilities.md).
+- [Image caption placement](https://github.com/inspiros/touying-ambrosia/blob/master/docs/image-slides.md), including bands and inset corner cards.
+- [Authors, linked affiliations, and fitted footers](https://github.com/inspiros/touying-ambrosia/blob/master/docs/people.md).
+- [Institution wrapper extensions](https://github.com/inspiros/touying-ambrosia/blob/master/docs/extensions.md).
 
-Use `greyc-theme` in place of `ambrosia-theme` in those examples. All core authoring helpers are available, including scoped forms such as `ambrosia.block`, `ambrosia.palette-showcase`, `ambrosia.affiliation`, and `ambrosia.navigation-buttons`. Native `#cite` / `@key` citations share the compact author-year labels by default. Configurable header/sidebar navigation, breadcrumbs, section progress, and optional transparent PDF controls are documented in the core's [navigation guide](https://github.com/inspiros/touying-ambrosia/blob/main/docs/navigation.md).
+Use `greyc-theme` in place of `ambrosia-theme` in those examples. All core authoring helpers are available, including scoped forms such as `ambrosia.block`, `ambrosia.palette-showcase`, `ambrosia.affiliation`, and `ambrosia.navigation-buttons`. Native `#cite` / `@key` citations share the compact author-year labels by default. Configurable header/sidebar navigation, breadcrumbs, section progress, and optional transparent PDF controls are documented in the core's [navigation guide](https://github.com/inspiros/touying-ambrosia/blob/master/docs/navigation.md).
 
 The optional `#ambrosia-credit-card()` uses GREYC Ambrosia branding, a static
 repository QR, and a link to the neutral core. `qr: false` hides the code. It
 works in ordinary slides and endings; nothing is inserted automatically. See
-the core's [credit/acknowledgement example](https://github.com/inspiros/touying-ambrosia/blob/main/examples/credits.typ).
+the core's [credit/acknowledgement example](https://github.com/inspiros/touying-ambrosia/blob/master/examples/credits.typ).
 
 The [GREYC card example](examples/credits.typ) reuses that renderer for a separate
 lab-information card with the laboratory website QR.

@@ -28,6 +28,8 @@ class PackageBoundaryTests(unittest.TestCase):
             self.assertTrue((wrapper_package / "assets/qr/qr-code-greyc-light.svg").is_file())
             self.assertFalse((wrapper_package / "assets/qr/qr-code-greyc-dark.svg").exists())
             self.assertFalse((wrapper_package / "assets/citations").exists())
+            self.assertFalse((wrapper_package / ".github").exists())
+            self.assertFalse((core_package / ".github").exists())
             self.assertFalse((core_package / "assets/logos/greyc").exists())
             for source in (core_package / "src").rglob("*.typ"):
                 self.assertNotIn("greyc", source.read_text().lower(), source)

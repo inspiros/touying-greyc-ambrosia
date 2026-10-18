@@ -13,7 +13,7 @@ its exact `@preview/touying-ambrosia:0.1.0` dependency. The single pull request
 should explain that the neutral core is new and the GREYC update depends on it.
 Both proposed versions must be tested together before submission.
 
-Follow the core's [release preparation guide](https://github.com/inspiros/touying-ambrosia/blob/main/docs/maintainers/releasing.md)
+Follow the core's [release preparation guide](https://github.com/inspiros/touying-ambrosia/blob/master/docs/maintainers/releasing.md)
 for archive contents, version-pinned README links, source tags, and isolated
 starter checks. Use the matching core source revision when assembling a release.
 
@@ -49,7 +49,7 @@ The packages submission contains the manifest, README, licenses, `src`, starter
 files, runtime assets, and required manifest thumbnail. Omit docs, examples,
 scripts, tests, generated PDFs, sample sheets, and the SVG README hero. Rewrite
 README documentation/artwork links to this repository's `v0.2.0`, and core links
-to its `v0.1.0`, including links that currently mention `main`. Shipped starter
+to its `v0.1.0`, including links that currently mention `master` or `main`. Shipped starter
 links must be stable too. Keep README and licenses in runtime downloads.
 
 The maintainer confirmed logo redistribution permission from GREYC's former head

@@ -85,15 +85,15 @@ Use `title-fit: false` globally or `title-slide(fit: false)` to take responsibil
 
 `examples/branding.typ` demonstrates the palettes, team identity, blocks, code, a table, citation footnotes, and appendix. Compile alternatives with `--input flavor=stargazer --input palette=nebula --input team=image`.
 
-The core's [title-layout presets](https://github.com/inspiros/touying-ambrosia/blob/main/docs/title-layouts.md) work here too. `greyc-theme(title-layout: "header", ...)` uses a native cover with GREYC/team and partner logos in the top band. A per-slide `title-slide(layout: "split", ...)` changes only that opening. Leave `title-layout: auto` to retain the legacy custom cover. Native `title-logos` / per-slide `logos` replaces the complete ordered title logo list.
+The core's [title-layout presets](https://github.com/inspiros/touying-ambrosia/blob/master/docs/title-layouts.md) work here too. `greyc-theme(title-layout: "header", ...)` uses a native cover with GREYC/team and partner logos in the top band. A per-slide `title-slide(layout: "split", ...)` changes only that opening. Leave `title-layout: auto` to retain the legacy custom cover. Native `title-logos` / per-slide `logos` replaces the complete ordered title logo list.
 
 `title-layout: "featured"` promotes the first logo (GREYC/team in the automatic
 collection) above the title and places the four partners in a smaller row below
-the metadata. Shared [ending layouts](https://github.com/inspiros/touying-ambrosia/blob/main/docs/ending-layouts.md)
+the metadata. Shared [ending layouts](https://github.com/inspiros/touying-ambrosia/blob/master/docs/ending-layouts.md)
 offer centered, plain, split takeaway/contact, and cover compositions through
 theme `ending-layout` or per-slide `ending-slide(layout: ...)`.
 
-The core's [palette example](https://github.com/inspiros/touying-ambrosia/blob/main/examples/palettes.typ) and [utilities example](https://github.com/inspiros/touying-ambrosia/blob/main/examples/utilities.typ) demonstrate shared color and component options.
+The core's [palette example](https://github.com/inspiros/touying-ambrosia/blob/master/examples/palettes.typ) and [utilities example](https://github.com/inspiros/touying-ambrosia/blob/master/examples/utilities.typ) demonstrate shared color and component options.
 
 ## Decorative Watermarks
 
@@ -105,13 +105,13 @@ The default mark is 50% of page height, with 25% of its width and 20% of its hei
 
 `ambrosia-theme` has no GREYC watermark by itself. To supply your own symbol, pass `watermark-logo: fill => svg-bytes`, returning SVG data tinted to the supplied color.
 
-Containers independently accept `ambrosia-block(watermark: "body", ...)` or `"title"`; see [utilities](https://github.com/inspiros/touying-ambrosia/blob/main/docs/utilities.md). These remain opt-in to avoid decorating every panel.
+Containers independently accept `ambrosia-block(watermark: "body", ...)` or `"title"`; see [utilities](https://github.com/inspiros/touying-ambrosia/blob/master/docs/utilities.md). These remain opt-in to avoid decorating every panel.
 
 ## Shared API
 
-The neutral `light` and `nocturne` palettes match the core. For lab presets choose `greyc-light`, `greyc-ivory`, `greyc-nocturne`, or `greyc-charcoal`. Build custom variants with `ambrosia-palette(base: "greyc-ivory", name: "My colors", primary: rgb("246844"))`, or use `rotate: 30deg` and role overrides. See the core's [palette guide](https://github.com/inspiros/touying-ambrosia/blob/main/docs/palettes.md).
+The neutral `light` and `nocturne` palettes match the core. For lab presets choose `greyc-light`, `greyc-ivory`, `greyc-nocturne`, or `greyc-charcoal`. Build custom variants with `ambrosia-palette(base: "greyc-ivory", name: "My colors", primary: rgb("246844"))`, or use `rotate: 30deg` and role overrides. See the core's [palette guide](https://github.com/inspiros/touying-ambrosia/blob/master/docs/palettes.md).
 
-The core also documents [linked affiliation markers](https://github.com/inspiros/touying-ambrosia/blob/main/docs/people.md), the [palette showcase](https://github.com/inspiros/touying-ambrosia/blob/main/docs/palettes.md), and [matching citation/bibliography labels](https://github.com/inspiros/touying-ambrosia/blob/main/docs/utilities.md). These work in GREYC, including its legacy cover, through the shared implementation.
+The core also documents [linked affiliation markers](https://github.com/inspiros/touying-ambrosia/blob/master/docs/people.md), the [palette showcase](https://github.com/inspiros/touying-ambrosia/blob/master/docs/palettes.md), and [matching citation/bibliography labels](https://github.com/inspiros/touying-ambrosia/blob/master/docs/utilities.md). These work in GREYC, including its legacy cover, through the shared implementation.
 
 ## Header Logos
 
@@ -162,7 +162,7 @@ continue to override their own placement. See the core's branding guide.
 `#ambrosia-credit-card()` / `#ambrosia.credit-card()` uses this package’s logo,
 repository URL, and bundled QR, and links to Touying Ambrosia as its base. Use
 `qr: false` for a quieter card. It is never inserted automatically. The core’s
-[credit and acknowledgement example](https://github.com/inspiros/touying-ambrosia/blob/main/examples/credits.typ)
+[credit and acknowledgement example](https://github.com/inspiros/touying-ambrosia/blob/master/examples/credits.typ)
 works here too. Native blocks remain suitable for collaborator/funder acknowledgements.
 
 For laboratory information, reuse the card with a GREYC identity, lab logo,
@@ -184,3 +184,11 @@ completion. GREYC defaults to `flavor: "legacy"`, `palette: "greyc-light"`, and
 grouped title logos. For `logos`, `header-logo`, `logo-focus`, and `watermark-logo`,
 `auto` selects GREYC branding and `none` hides the mark. Custom content or
 callbacks override those defaults; positional Touying configurations apply last.
+
+## Outline Leaders
+
+GREYC agendas use dotted leaders by default (`outline-fill: repeat[.]`). Set
+`outline-fill: none` on `greyc-theme` to remove them, or use
+`outline-slide(fill: ...)` / `new-section-slide(fill: ...)` for a local override.
+The same choice applies to the fitted list, card, and path treatments. See the
+[core agenda guide](https://github.com/inspiros/touying-ambrosia/blob/master/docs/agendas.md).

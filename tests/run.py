@@ -125,6 +125,7 @@ def assert_theme_options():
         assert len(observations) == 1
         probe = observations[0]
         assert probe["text-size"] == size and probe["navigation"] == nav, (mode, probe)
+        assert probe["no-outline-fill"] == (mode != "defaults"), (mode, probe)
         assert probe["logos"] == (4 if mode == "defaults" else 0), (mode, probe)
         assert probe["distribution"] == ("grouped" if mode == "defaults" else "equal"), (mode, probe)
         assert all(probe[key] == (mode != "defaults") for key in ("primary", "header", "watermark")), (mode, probe)

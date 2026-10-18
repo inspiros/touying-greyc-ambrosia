@@ -4,6 +4,7 @@
 #show: greyc-theme.with(
   flavor: "minimal",
   ..if custom { (
+    outline-fill: none,
     logos: none, primary-logos: none, header-logo: none, logo-focus: none,
     watermark-logo: none, text-size: 16pt, navigation: "tree",
     title: self => [Custom Slide Heading], subtitle: none,
@@ -21,6 +22,7 @@
   #metadata((
     text-size: self.store.text-size.pt(),
     navigation: self.store.navigation,
+    no-outline-fill: self.store.outline-fill == none,
     distribution: self.store.title-logo-distribution,
     logos: if self.store.logos == none { 0 } else { self.store.logos.len() },
     primary: self.store.primary-logos == none,
