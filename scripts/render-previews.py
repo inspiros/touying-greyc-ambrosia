@@ -111,8 +111,11 @@ def main():
         entrypoint = starter / 'template.typ'
         run('typst', 'compile', '--root', starter, entrypoint, OUTPUT / 'template.pdf')
         # Keep the starter check under target; no PDF belongs in a new project.
-        run('typst', 'compile', '--root', starter, '--pages', '1', '--ppi', '144',
-            entrypoint, ROOT / 'assets/template-thumbnail.png')
+        # Universe accepts WebP; the cover photograph compresses far better lossy.
+        thumbnail = OUTPUT / 'template-thumbnail.png'
+        run('typst', 'compile', '--root', starter, '--pages', '1', '--ppi', '144', entrypoint, thumbnail)
+        with Image.open(thumbnail) as image:
+            image.convert('RGB').save(ROOT / 'assets/template-thumbnail.webp', quality=90, method=6)
 
 
 if __name__ == '__main__':

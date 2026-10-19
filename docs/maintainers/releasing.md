@@ -22,7 +22,7 @@ to `@local`, while the retained core alias uses `@preview` to preserve live
 updates. Neither local installation nor an isolated preview override publishes
 anything.
 
-`assets/template-thumbnail.png` is the first page of an unmodified initialized
+`assets/template-thumbnail.webp` is the first page of an unmodified initialized
 legacy starter. `scripts/render-previews.py --update-pdfs` refreshes it and the
 starter validation PDF under `target` (not in `template`). `scripts/render-thumbnail.py` generates the SVG README hero from
 real legacy, team-branded, and modern slide renders. That artwork remains
