@@ -10,9 +10,10 @@ and [illustrated manual](https://github.com/inspiros/touying-ambrosia/blob/maste
 Use `greyc-theme` in place of `ambrosia-theme`; shared authoring helpers retain
 the same names.
 
-For private presenter notes, follow the core's
-[speaker notes guide](https://github.com/inspiros/touying-ambrosia/blob/master/docs/speaker-notes.md).
-The PDF/sidecar and split-page workflows also apply to `greyc-theme`.
+Presenter notes are an optional Touying feature. The core's
+[extras guide](https://inspiros.github.io/touying-ambrosia/v0.1.0/speaker-notes.html)
+describes viewer-dependent workflows, including pdfpc sidecars and split-page
+output; these also apply to `greyc-theme`.
 
 Editable examples:
 

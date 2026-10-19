@@ -9,14 +9,17 @@ Version 0.2.0 requires Typst 0.15+, Touying 0.8.0, and Touying Ambrosia 0.1.0. F
   palette: "greyc-nocturne",
   team: "safe",
   font: "DejaVu Sans",
-  config-info(title: [A research presentation], author: [Your name]),
+  config-info(title: [A Research Presentation], author: [Your Name]),
 )
 #title-slide()
 ```
 
 ## Choose Independently
 
-`flavor` selects geometry, components, and appearance presets. The six classic choices remain `legacy`, `simple`, `cambridge`, `darmstadt`, `dewdrop`, and `stargazer`. The new `minimal` flavor uses a quiet heading band, a top-right logo, minimal footers, and flat blocks by default. The default flavor remains `legacy`.
+`flavor` selects geometry and component defaults. GREYC offers `legacy` plus
+the core's seven flavors: `minimal`, `simple`, `cambridge`, `darmstadt`,
+`dewdrop`, `stargazer`, and `portico`. The default is `legacy`; structural
+navigation can be chosen independently of every flavor.
 
 `palette` selects colors independently. Four lab presets supplement the twelve neutral core palettes. All four use GREYC purple as their accent seed, adjusted for readable contrast on their surfaces. Any palette works with any flavor:
 
@@ -30,9 +33,10 @@ Version 0.2.0 requires Typst 0.15+, Touying 0.8.0, and Touying Ambrosia 0.1.0. F
 | `rose` | Pale rose with plum | `nebula` | Deep purple with mauve |
 | `slate` | Restrained blue-gray | `graphite` | Neutral gray |
 
-Dark palettes supply light text, subtle surfaces, readable accents, and matching code highlighting. For example, `flavor: "cambridge", palette: "nebula"` retains Cambridge's split navigation and heading levels with purple dark surfaces.
-
-The earlier unreleased `nocturne` and `nebula` flavor names have become palette names. Use `flavor: "minimal", palette: "greyc-nocturne"` or `palette: "nebula"` instead.
+Dark palettes supply light text, subtle surfaces, readable accents, and matching
+code highlighting. For example, `flavor: "cambridge", palette: "nebula"`
+retains Cambridge's context navigator and level-three slide headings with
+purple dark surfaces. `nocturne` and `nebula` are palettes, not flavors.
 
 `team` selects the team logos without changing any palette color. Use `amacc`, `codag`, `diamant`, `electronique`, `image`, `mad`, or `safe`. Names are case-insensitive; `elec` and `électronique` also select ELECTRONIQUE. Omit the option or use `none` for the lab-wide identity. The default is logos only. `team-accent: true` optionally adds a thin vertical stripe in the team's original color to the legacy title slide; other title layouts keep their native geometry.
 
@@ -62,7 +66,7 @@ The semantic color roles include `background`, `foreground`, `surface`, `surface
   palette: "greyc-nocturne",
   team: "image",
   config-colors(primary: rgb("a9d9f0"), surface: rgb("203344")),
-  config-info(title: [Custom presentation], author: [Presenter]),
+  config-info(title: [Custom Presentation], author: [Presenter]),
 )
 ```
 
@@ -111,7 +115,7 @@ Containers independently accept `ambrosia-block(watermark: "body", ...)` or `"ti
 
 The neutral `light` and `nocturne` palettes match the core. For lab presets choose `greyc-light`, `greyc-ivory`, `greyc-nocturne`, or `greyc-charcoal`. Build custom variants with `ambrosia-palette(base: "greyc-ivory", name: "My colors", primary: rgb("246844"))`, or use `rotate: 30deg` and role overrides. See the core's [palette guide](https://github.com/inspiros/touying-ambrosia/blob/master/docs/palettes.md).
 
-The core also documents [linked affiliation markers](https://github.com/inspiros/touying-ambrosia/blob/master/docs/people.md), the [palette showcase](https://github.com/inspiros/touying-ambrosia/blob/master/docs/palettes.md), and [matching citation/bibliography labels](https://github.com/inspiros/touying-ambrosia/blob/master/docs/utilities.md). These work in GREYC, including its legacy cover, through the shared implementation.
+The core also documents [linked affiliation markers](https://github.com/inspiros/touying-ambrosia/blob/master/docs/people.md), the [palette showcase](https://github.com/inspiros/touying-ambrosia/blob/master/docs/palettes.md), and [matching citation/bibliography labels](https://github.com/inspiros/touying-ambrosia/blob/master/docs/citations.md). These work in GREYC, including its legacy cover, through the shared implementation.
 
 ## Header Logos
 

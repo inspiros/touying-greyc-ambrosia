@@ -4,6 +4,7 @@ This section is for developing and releasing the package. Presentation authors
 should use the [user guide](../README.md).
 
 - [Contributing](../../CONTRIBUTING.md): checkout setup and common commands.
+- [Repository Guide](../../AGENTS.md): source map and review focus for humans and agents.
 - [Development](development.md): regression coverage and branding contracts.
 - [Package Boundary](package-boundary.md): the neutral core and branded wrapper.
 - [Joint Release](releasing.md): preparing both packages for one submission.

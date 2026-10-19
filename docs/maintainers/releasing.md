@@ -1,7 +1,7 @@
 # Preparing The Joint Submission
 
-The intended submission contains these two new version directories in one pull
-request:
+The joint submission contains these two new version directories in
+[PR #6154](https://github.com/typst/packages/pull/6154):
 
 | Package | Version | Submission directory |
 | --- | --- | --- |
@@ -28,7 +28,7 @@ starter validation PDF under `target` (not in `template`). `scripts/render-thumb
 real legacy, team-branded, and modern slide renders. That artwork remains
 separate from the manifest thumbnail.
 
-The source READMEs keep relative links for GitHub. An eventual export step should
+The source READMEs keep relative links for GitHub. The submission copy must
 rewrite documentation and artwork URLs to each project's final source tag,
 while keeping the package's `README.md` and `LICENSE`. Avoid blindly copying
 all generated samples or losing README illustrations through runtime exclusions.
@@ -47,7 +47,8 @@ only useful starter source and assets.
 
 The packages submission contains the manifest, README, licenses, `src`, starter
 files, runtime assets, and required manifest thumbnail. Omit docs, examples,
-scripts, tests, generated PDFs, sample sheets, and the SVG README hero. Rewrite
+scripts, tests, agent guidance (`AGENTS.md`, `CLAUDE.md`), generated PDFs, sample
+sheets, and the SVG README hero. Rewrite
 README documentation/artwork links to this repository's `v0.2.0`, and core links
 to its `v0.1.0`, including links that currently mention `master` or `main`. Shipped starter
 links must be stable too. Keep README and licenses in runtime downloads.
@@ -64,5 +65,7 @@ page is not a blanket open-source license; the README preserves the respective
 owners' rights and distinguishes the artwork from the MIT code. Retain this
 notice in the trimmed submission.
 
-Current work is preparation only. Final testing, wording, and source-repository
-releases come before any copy into the packages checkout, commit, or pull request.
+Before merge, apply reviewed corrections to the source repository and staged
+copy together. Refresh an unpublished source tag only as part of authorized
+release work, then check its pinned links. After publication, keep existing
+tags/package versions immutable and make changes in a new release.

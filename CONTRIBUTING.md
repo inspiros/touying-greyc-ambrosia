@@ -3,6 +3,8 @@
 These instructions are for working on the package. For presentation authoring,
 use the [user documentation](docs/README.md).
 
+For a code-review entry point and source map, read [AGENTS.md](AGENTS.md).
+
 Use Typst 0.15+, Python 3.11+, and Poppler for the checks. Artwork scripts also
 use Pillow (`python3 -m pip install Pillow`).
 
@@ -36,7 +38,6 @@ After changing the pinned core theme signature, run
 The generator keeps GREYC branding defaults and inherits core callback renderers.
 
 These checks cover GREYC presets, logos, team integration, the legacy cover, and installed consumers. General behavior is tested in the core. Disposable experiments belong in `develop/`, outputs in `target/`. See [development](docs/maintainers/development.md), [the package boundary](docs/maintainers/package-boundary.md), [release preparation](docs/maintainers/releasing.md), and the concise [changelog](CHANGELOG.md).
-
 
 The [maintainer index](docs/maintainers/README.md) collects implementation,
 artwork, architecture, and release notes.
