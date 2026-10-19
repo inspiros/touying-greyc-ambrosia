@@ -56,7 +56,7 @@ The badge chooses readable text for that fill. Use it on a team introduction or 
 
 `font: auto` retains the document's font choice. `mono-font` defaults to `DejaVu Sans Mono`, and `text-size` defaults to **18pt**. Table text defaults to `0.85em`, figure captions to `0.8em`, and footnotes to `0.65em`; customize these through `table-text-size`, `caption-text-size`, and `footnote-text-size`. Set these in `greyc-theme` or `ambrosia-theme`.
 
-Theme spacing, header/footer decorations, logo frames, block radii, and shadows use `em`, so they scale with the surrounding text size. Page proportions and widths retain percentage/fraction units. The shadow renderer resolves relative lengths before generating its SVG.
+Theme spacing, header/footer decorations, logo frames, block radii, and shadows use `em`, so they scale with the surrounding text size. Page proportions and widths keep their percentage/fraction units.
 
 The semantic color roles include `background`, `foreground`, `surface`, `surface-alt`, `muted`, `border`, and `on-accent`, alongside Touying's `primary` family. `info`, `success`, `warning`, `danger`, and `neutral` provide readable accents for block and badge kinds. `accent-strong`/`on-accent-strong`, `chrome`/`on-chrome`/`chrome-muted`, and `cover`/`on-cover` supply paired colors for accent cards, navigation bands, and the legacy cover. Preset text/accent roles are checked for at least 4.5:1 contrast on their associated surfaces. For example:
 
@@ -105,7 +105,7 @@ GREYC's compact symbol appears as a quiet, cropped background mark on title, out
 
 `watermark: false` disables page watermarks globally. `watermark: true` enables them for title/outline/section slides in other layouts. A helper's `watermark: false` or `true` overrides its preset. An explicitly enabled legacy-cover mark appears above its photograph; it is off by default.
 
-The default mark is 50% of page height, with 25% of its width and 20% of its height beyond the bottom-right border. Its 5.5% opacity keeps it behind the content. Customize `watermark-height` and `watermark-opacity`. The tint follows the actual background, including dark palettes. A monochrome copy is generated from the cached SVG; the source logo remains intact.
+The default mark is 50% of page height, with 25% of its width and 20% of its height beyond the bottom-right border. Its 5.5% opacity keeps it behind the content. Customize `watermark-height` and `watermark-opacity` (a percentage, such as `8%`). The tint follows the actual background, including dark palettes. A monochrome copy is generated from the cached SVG; the source logo remains intact.
 
 `ambrosia-theme` has no GREYC watermark by itself. To supply your own symbol, pass `watermark-logo: fill => svg-bytes`, returning SVG data tinted to the supplied color.
 
@@ -119,8 +119,9 @@ The core also documents [linked affiliation markers](https://github.com/inspiros
 
 ## Header Logos
 
-`legacy`, `simple`, `minimal`, `dewdrop`, `stargazer`, and `portico` attach the
-GREYC traits artwork to the top-right edge. Wide bands (including Stargazer's
+`legacy` and every core flavor without footer branding (currently `simple`,
+`minimal`, `dewdrop`, `stargazer`, and `portico`) attach the GREYC traits
+artwork to the top-right edge. Wide bands (including Stargazer's
 tabs or dots) paint across the full page behind the mark; their labels reserve
 room for the logo. Cambridge and Darmstadt keep normal marks in the footer.
 
@@ -138,6 +139,12 @@ retain their original colors.
 
 The shared `footer-logo` option accepts `auto` (the flavor preset), `true`, or `false`. Cambridge and Darmstadt share one compact row for logo/buttons above any segmented navigation rail. Its body space is reserved, so the logo cannot overlap slide content. Set `footer-logo: false` in `greyc-theme` to hide it, or `config-store(footer-logo: false)` on one slide. `footer-logo-height` defaults to `1.1em`. The native header title layout hides the repeated footer logo on that title slide.
 
+## Portico Sidebar
+
+Portico's sidebar is transparent by default (`sidebar-background: none`). Set
+`auto` to enable the flavor's panel paint, or supply a solid color. A local
+`config-store(sidebar-background: none)` changes a single slide. Its reserved
+width and label padding remain the same, and labels adapt to the new surface.
 
 ## Primary And Partner Groups
 
@@ -173,13 +180,9 @@ For laboratory information, reuse the card with a GREYC identity, lab logo,
 website URL, and the lab's official QR. The
 [lab information and package credit example](../examples/credits.typ) shows the
 two identities separately. `assets.asset-paths.lab-qr` names the official lab
-website QR; `assets.asset-paths.credit-qr` remains the package repository QR. The example places the standard lab QR on a white backing on
-both light and dark palettes. No additional public component is needed.
-
-Portico's sidebar is transparent by default (`sidebar-background: none`). Set
-`auto` to enable the flavor's panel paint, or supply a solid color. A local
-`config-store(sidebar-background: none)` changes a single slide. Its reserved
-width and label padding remain the same, and labels adapt to the new surface.
+website QR; `assets.asset-paths.credit-qr` remains the package repository QR. The example
+places the standard lab QR on a white backing on both light and dark palettes.
+No additional public component is needed.
 
 ## Editor Completion
 
