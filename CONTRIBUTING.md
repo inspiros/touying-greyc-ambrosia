@@ -41,3 +41,6 @@ These checks cover GREYC presets, logos, team integration, the legacy cover, and
 
 The [maintainer index](docs/maintainers/README.md) collects implementation,
 artwork, architecture, and release notes.
+
+The Checks workflow runs only on `v*` release-tag pushes. Run relevant checks
+locally before committing ordinary changes.
